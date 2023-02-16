@@ -8,6 +8,7 @@
 .questionanswer{
    position: relative;
    width: 70%;
+   z-index: 1;
 }
 
 .questionanswer__question {
@@ -46,28 +47,46 @@
 
 .questionanswer__answer {
    position: absolute;
-   background-color: #FFDD00;
+   background-color: #F0F0F0;
    top:50px;
-   left:5%;
-   right: -7%;
-   z-index: 1;
-   font-size: 22px;
-   line-height: 44px;
-   padding: 2rem;
-}
-
-.questionanswer__answer__check-container {
+   left:7%;
+   /* right: -9%; */
+   z-index: -1;  
+   padding: 1rem;
    text-align: right;
+   height: 140px;
+   width: 100%;
 }
 
-.questionanswer__answer__check-container input {
-   display: none;
+.questionanswer__answer--expanded {
+   background-color: #FFDD00;
 }
 
 
-.questionanswer__answer__answer-container {
+.questionanswer__answer__answer-container--collapsed {
    max-height: 0;
    opacity: 0;
    visibility: hidden;
    transition: max-height 1s;
+   background-color:  #F0F0F0; 
+}
+
+
+
+.questionanswer__answer__answer-container--expanded {
+   max-height: 100vh;
+   opacity: 1;
+   visibility: visible;
+   font-size: 22px;
+   padding: 1.8rem;
+   background-color: #FFDD00;
+   text-align: justify;
+   line-height: 44px;
+}
+
+
+@media screen and (max-width: 1100px) {
+   .questionanswer__answer {
+      left: 9%;
+   }
 }

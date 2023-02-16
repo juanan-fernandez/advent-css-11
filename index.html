@@ -15,28 +15,29 @@
 	<section class="container">
 		<article class="questionanswer">
 			<div class="questionanswer__question">
-				<div class="questionanswer__question__imgcontainer"><img src='/images/yellow_q.svg'></div>
+				<div class="questionanswer__question__imgcontainer" id="questionImage"><img src='/images/yellow_q.svg'>
+				</div>
 				<div class="questionanswer__question__question-container">
 					<p>Technically, Svelte is a library and SvelteKit is a framework. What's the difference?</p>
 				</div>
 			</div>
-			<div></div>
 			<div class="questionanswer__answer">
-				<div class="questionanswer__answer__check-container">
-					<label for="check"><img src="./images/expand.png"></label>
-					<input type="checkbox" id="check" name="check" />
-				</div>
-				<div class="questionanswer__answer__answer-container">Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Iure, ipsum sint accusamus eius vero dolorum soluta! Incidunt perspiciatis repudiandae sequi est
-					nulla sint veritatis voluptatum, optio aperiam, laborum tempora enim. Porro dolores beatae provident
-					repudiandae similique sapiente exercitationem quasi, quisquam quia nam, molestiae vero nihil quod aut
-					magni voluptate. Non harum labore minima recusandae commodi quibusdam, ipsum itaque? Placeat, libero? Sit
-					praesentium accusamus, porro voluptas dicta molestias dolores consequatur laudantium inventore assumenda
-					voluptatibus consectetur provident facere placeat numquam laborum rem magni neque eos mollitia
-					perferendis culpa in. </div>
+				<button onclick="showHide()"><img src="./images/expand.png"></button>
+				<!-- <div class="questionanswer__answer__check-container">
+
+				</div> -->
+				<div class="questionanswer__answer__answer-container--collapsed">Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Iure, ipsum sint accusamus eius vero dolorum soluta! Incidunt perspiciatis repudiandae
+					sequi est nulla sint veritatis voluptatum, optio aperiam, laborum tempora enim. Porro dolores beatae
+					provident repudiandae similique sapiente exercitationem quasi, quisquam quia nam, molestiae vero nihil
+					quod aut magni voluptate. Non harum labore minima recusandae commodi quibusdam, ipsum itaque? Placeat,
+					libero? Sit praesentium accusamus, porro voluptas dicta molestias dolores consequatur laudantium
+					inventore assumenda voluptatibus consectetur provident facere placeat numquam laborum rem magni neque eos
+					mollitia perferendis culpa in. </div>
 			</div>
 		</article>
 	</section>
 </body>
+<script src="./expand-collapse.js"></script>
 
 </html>
