@@ -8,7 +8,7 @@ function showHide() {
 	const answer = this.nextElementSibling;
 	answerContainer.classList.toggle('questionanswer__answer--expanded');
 	answer.classList.toggle('questionanswer__answer__content--expanded');
-	answer.style.maxHeight = answer.scrollHeight + 'px';
+	//answer.style.height = answer.scrollHeight + 'px';
 	this.innerHTML =
 		answer.classList.length > 1
 			? '<img src="/images/close.png" />'
