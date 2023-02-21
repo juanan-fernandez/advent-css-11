@@ -14,9 +14,6 @@
    z-index: 1;  
 }
 
-.questionanswer--clicked {
-   z-index: 10;
-}
 
 .questionanswer__question {
    height: auto;
